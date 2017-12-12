@@ -7,11 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "Person.h"
+void eating(){
+NSLog(@"饿了就要吃饭");
+}
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        Person *p1 = [[Person alloc]init];
+        [p1 sleep];
+        eating();
+        
+        
     }
     return 0;
 }
